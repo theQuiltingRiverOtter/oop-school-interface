@@ -1,5 +1,6 @@
-from school import School 
+from classes.manage_school import ManageSchool
 
-school = School('Ridgemont High') 
+manager = ManageSchool("RidgeMont High")
 
-print(school.name)
+
+manager.execute()
