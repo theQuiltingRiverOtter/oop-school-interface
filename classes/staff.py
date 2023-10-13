@@ -11,13 +11,13 @@ class Staff(Person):
         self.employee_id = employee_id
 
     def __str__(self):
-        return f"Staff: {self.name}, Age: {self.age}, Role: {self.role}, ID: {self.employee_id}"
+        return f"{self.name.upper()}\n---------------\nrole: {self.role}\nage: {self.age}\nid: {self.school_id}"
 
     def __repr__(self):
         return f"Staff({self.name}, {self.age}, {self.role}, {self.employee_id}, {self.password})"
 
     @classmethod
-    def all_staff(cls):
+    def all_members(cls):
         all_staff = []
         staff = FileHandler.load_file("staff")
         for member in staff:

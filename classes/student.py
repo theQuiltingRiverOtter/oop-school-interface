@@ -14,7 +14,7 @@ class Student(Person):
         return f"Student({self.name}, {self.age}, {self.role}, {self.school_id}, {self.password})"
 
     @classmethod
-    def all_students(cls):
+    def all_members(cls):
         students = []
         students_data = FileHandler.load_file("students")
         for member in students_data:

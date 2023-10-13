@@ -7,13 +7,13 @@ class ManageSchool:
 
     def main_menu(self):
         print("What would you like to do?")
-        print("Options")
-        print("1. List All Students")
-        print("2. View Individual Student <student_id>")
-        print("3. Add a student")
-        print("4.Remove a Student <student_id>")
-        print("5. Print Menu")
-        print("6. Quit")
+        print("  Options")
+        print("   1. List All Students")
+        print("   2. View Individual Student <student_id>")
+        print("   3. Add a student")
+        print("   4. Remove a Student <student_id>")
+        print("   5. Print Menu")
+        print("   6. Quit")
 
     def get_student_data(self):
         student_data = {"role": "Student", "school_id": self.school.random_school_id()}
